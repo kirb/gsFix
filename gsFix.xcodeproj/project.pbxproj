@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF591F63165CA2A700C8F95F /* fixer.sh in Resources */ = {isa = PBXBuildFile; fileRef = CFBD01A7165BA13F00295C0C /* fixer.sh */; };
+		CFA059CD165CDBED0076DC72 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CFA059CC165CDBED0076DC72 /* icon.icns */; };
+		CFA27DD2165CBB2300989868 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CFBD0199165B6CCD00295C0C /* Credits.rtf */; };
 		CFBD018B165B6CCC00295C0C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBD018A165B6CCC00295C0C /* Cocoa.framework */; };
 		CFBD0195165B6CCD00295C0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFBD0193165B6CCD00295C0C /* InfoPlist.strings */; };
 		CFBD0197165B6CCD00295C0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBD0196165B6CCD00295C0C /* main.m */; };
-		CFBD019B165B6CCD00295C0C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CFBD0199165B6CCD00295C0C /* Credits.rtf */; };
 		CFBD019E165B6CCD00295C0C /* GFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBD019D165B6CCD00295C0C /* GFAppDelegate.m */; };
 		CFBD01A1165B6CD100295C0C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBD019F165B6CD100295C0C /* MainMenu.xib */; };
+		CFBD01A9165BAA6900295C0C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBD01A8165BAA6400295C0C /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CFA059CC165CDBED0076DC72 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../icon.icns; sourceTree = "<group>"; };
 		CFBD0186165B6CCC00295C0C /* gsFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gsFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBD018A165B6CCC00295C0C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CFBD018D165B6CCC00295C0C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +33,8 @@
 		CFBD019C165B6CCD00295C0C /* GFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFAppDelegate.h; sourceTree = "<group>"; };
 		CFBD019D165B6CCD00295C0C /* GFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFAppDelegate.m; sourceTree = "<group>"; };
 		CFBD01A0165B6CD100295C0C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CFBD01A7165BA13F00295C0C /* fixer.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = fixer.sh; sourceTree = "<group>"; };
+		CFBD01A8165BAA6400295C0C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBD01A9165BAA6900295C0C /* Security.framework in Frameworks */,
 				CFBD018B165B6CCC00295C0C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				CFBD018A165B6CCC00295C0C /* Cocoa.framework */,
+				CFBD01A8165BAA6400295C0C /* Security.framework */,
 				CFBD018C165B6CCC00295C0C /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -84,6 +92,7 @@
 			children = (
 				CFBD019C165B6CCD00295C0C /* GFAppDelegate.h */,
 				CFBD019D165B6CCD00295C0C /* GFAppDelegate.m */,
+				CFBD01A7165BA13F00295C0C /* fixer.sh */,
 				CFBD019F165B6CD100295C0C /* MainMenu.xib */,
 				CFBD0191165B6CCC00295C0C /* Supporting Files */,
 			);
@@ -93,6 +102,7 @@
 		CFBD0191165B6CCC00295C0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFA059CC165CDBED0076DC72 /* icon.icns */,
 				CFBD0192165B6CCC00295C0C /* gsFix-Info.plist */,
 				CFBD0193165B6CCD00295C0C /* InfoPlist.strings */,
 				CFBD0196165B6CCD00295C0C /* main.m */,
@@ -154,9 +164,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF591F63165CA2A700C8F95F /* fixer.sh in Resources */,
 				CFBD0195165B6CCD00295C0C /* InfoPlist.strings in Resources */,
-				CFBD019B165B6CCD00295C0C /* Credits.rtf in Resources */,
 				CFBD01A1165B6CD100295C0C /* MainMenu.xib in Resources */,
+				CFA27DD2165CBB2300989868 /* Credits.rtf in Resources */,
+				CFA059CD165CDBED0076DC72 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +272,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gsFix/gsFix-Prefix.pch";
 				INFOPLIST_FILE = "gsFix/gsFix-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,6 +285,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gsFix/gsFix-Prefix.pch";
 				INFOPLIST_FILE = "gsFix/gsFix-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -296,6 +310,7 @@
 				CFBD01A6165B6CD100295C0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
